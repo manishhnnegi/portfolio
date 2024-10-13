@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem; /* Further reduced font size */
+    margin: 3px 0; /* Further reduced margin */
+}
+
+h2, h3 {
+    color: #1a1a1d;
+    text-transform: uppercase;
+    font-size: 1.3rem; /* Further reduced font size */
+    margin: 3px 0; /* Further reduced margin */
+}
+
+h4 {
+    color: #1a1a1d;
+    text-transform: uppercase;
+    font-size: 1.0rem; /* Further reduced font size */
+    margin: 3px 0; /* Further reduced margin */
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0; /* Reduced padding for compactness */
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #ffffff;
+    padding: 15px 0; /* Reduced padding for compactness */
+    text-align: center;
+}
+
+header .profile-picture {
+    width: 100px; /* Reduced size */
+    height: auto;
+    border-radius: 50%; /* More semantic way to make the image round */
+    margin-bottom: 8px; /* Reduced space between image and name */
+}
+
+header h1 {
+    font-size: 1.8rem; /* Adjusted font size for compactness */
+    margin: 5px 0; /* Reduced margin */
+}
+
+header p {
+    font-size: 0.9rem; /* Smaller font size for compactness */
+    margin-top: 3px; /* Reduced top margin */
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 15px 0; /* Reduced padding for compactness */
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 5px auto; /* Reduced margin */
+    font-size: 0.9rem; /* Adjusted font size */
+    line-height: 1.4; /* Reduced line height for compactness */
+}
+
+/* Projects and Blogs Section */
+.projects, .blogs {
+    background-color: #e9ecef;
+    padding: 15px 0; /* Reduced padding for compactness */
+    text-align: center;
+}
+
+.projects-grid, .blog-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px; /* Adjusted gap for compactness */
+}
+
+/* Card Styles */
+.project-card, .blog-card {
+    background: white;
+    padding: 10px; /* Further reduced padding for compactness */
+    border-radius: 8px; /* Slightly reduced border-radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover, .blog-card:hover {
+    transform: translateY(-3px); /* Slightly reduced hover effect */
+}
+
+.project-card a, .blog-card a {
+    display: inline-block;
+    margin-top: 3px; /* Reduced margin */
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-card a:hover, .blog-card a:hover {
+    color: #0056b3;
+}
+
+/* Experience Section */
+.experience {
+    background-color: #fff;
+    padding: 15px 0; /* Further reduced padding for compactness */
+    text-align: left;  /* Aligned to the left */
+    margin: 10px 0;   /* Reduced margin */
+}
+
+.experience ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+/* Footer */
+footer {
+    background: #1a1a1d;
+    color: white;
+    padding: 10px 0; /* Reduced padding for compactness */
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem; /* Smaller font size for compactness */
+}
+
+footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-grid, .blog-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
+/* Custom Section Styles */
+.pet-projects, .experience {
+    text-align: left;  /* Align text to the left */
+    margin: 5px 0;    /* Reduced margin for compactness */
+    padding: 10px;     /* Kept padding minimal for compactness */
+    font-size: 0.9rem; /* Adjusted font size for compactness */
+}
+
+.social-links {
+    display: flex; /* Arrange icons in a row */
+    justify-content: center; /* Center them horizontally */
+    margin-top: 10px; /* Space between text and icons */
+}
+
+.social-icon {
+    width: 30px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s; /* For hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.project-image {
+    width: 80px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+    vertical-align: middle; /* Align image with text */
+}
+
+
+.pet-projects ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.pet-projects li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 15px; /* Space between projects */
+}
+
+.project-image {
+    width: 60px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.project-description {
+    flex: 1; /* Allow description to take the remaining space */
+    font-size: 0.9rem; /* Increased font size */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+
+
