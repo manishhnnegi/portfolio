@@ -211,3 +211,93 @@ footer a:hover {
 
 
 
+.timeline {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.timeline-item {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.year-logo {
+    display: flex;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 0 0 150px; /* Fixed width for the left section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.year {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.content {
+    flex: 1; /* Content takes up the remaining space */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.timeline-item p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+}
+
+.timeline-link {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.timeline-link:hover {
+    text-decoration: underline;
+}
+
+
+
+li {
+    font-size: 0.9em; /* Reduces the font size slightly (85% of the default size) */
+    line-height: 1.5; /* Ensures good readability with appropriate line spacing */
+}
+
+li strong a {
+    font-size: 1.0em; /* Reduces font size for the bold link specifically */
+    text-decoration: none; /* Optional: Remove underline for the link */
+}
+
+li strong {
+    font-weight: bold; /* Keep strong text bold */
+}
+
+li a:hover {
+    text-decoration: underline; /* Optional: Underline the link on hover */
+}
