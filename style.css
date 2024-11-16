@@ -282,6 +282,35 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .timeline-item {
+        padding: 10px;
+    }
+
+    .year-logo {
+        flex-direction: column; /* Stack year and logo vertically */
+        align-items: center; /* Center content */
+    }
+
+    .left-section {
+        flex: 0 0 120px; /* Smaller width for mobile */
+        gap: 5px;
+    }
+
+    .logo {
+        width: 80px; /* Reduce logo size */
+    }
+
+    .content {
+        flex: 1;
+        text-align: center; /* Center content text on smaller screens */
+    }
+
+    .timeline-item p {
+        font-size: 0.8em; /* Slightly smaller text for mobile */
+    }
+}
 
 
 li {
